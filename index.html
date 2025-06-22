@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seu Nome - Portfólio</title>
+    <meta name="description" content="Portfólio pessoal - Desenvolvedor apaixonado por tecnologia e inovação" />
+    <meta name="keywords" content="desenvolvedor, portfolio, programação, web developer" />
+    <meta name="author" content="Seu Nome" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo"><i class="fa-brands fa-firefox"></i> Petter
+                Santos</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li>
+                    <a href="#skills" class="nav-link">Conhecimentos</a>
+                </li>
+                <li><a href="#projects" class="nav-link">Projetos</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Olá, eu sou Petter Santos</h1>
+            <p>
+                Seja bem-vindo ao meu portfólio! Aqui, você encontrará um
+                desenvolvedor apaixonado por tecnologia e inovação, criando
+                soluções digitais incríveis.
+            </p>
+            <p>
+                Além disso, verá projetos que refletem meu compromisso com a
+                tecnologia e meu desejo de criar soluções inteligentes. (Ou
+                só expressar minha criatividade.)
+            </p>
+            <p>Executando... dá um <code>console.log()</code> aí!</p>
+            <a href="#about" class="cta-button">Conhecer mais</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title fade-in">Sobre mim</h2>
+            <div class="about-content fade-in">
+                <div class="about-image">
+                    <!-- SUBSTITUIR: Adicione o link da sua foto pessoal aqui -->
+                    <img src="assets/images/man_photo_profile.jpg" alt="Foto de Petter Santos" />
+                </div>
+                <div class="about-text">
+                    <h3>Desenvolvedor Full Stack</h3>
+                    <p>
+                        Sou um desenvolvedor apaixonado por criar
+                        experiências digitais únicas e funcionais. Com
+                        experiência em desenvolvimento web moderno, sempre
+                        busco aprender novas tecnologias e aprimorar minhas
+                        habilidades.
+                    </p>
+                    <p>
+                        Minha jornada na programação começou com curiosidade
+                        e se transformou em paixão. Atualmente, curso
+                        Bacharelado em Engenharia de Software na
+                        Universidade Anhanguera - UNIDERP e, paralelamente,
+                        cursando Desenvolvimento Web (Udemy). Tenho
+                        experiência em projetos pessoais e freelances, onde
+                        apliquei meus conhecimentos em HTML, CSS,
+                        JavaScript, Node.js e outras tecnologias.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-skills">
+        <!-- Skills Section -->
+        <div class="skills-section">
+            <h2 class="section-title">Conhecimentos</h2>
+            <div class="skills-categories">
+                <!-- Frontend -->
+                <div class="category">
+                    <h3 class="category-title">
+                        <i class="fas fa-palette"></i>
+                        Frontend Development
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-category="frontend" data-progress="90">
+                            <i class="fab fa-html5 skill-icon"></i>
+                            <div class="skill-name">HTML5</div>
+                            <div class="skill-level">Avançado</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="--progress-width: 90%"></div>
+                            </div>
+                            <div class="tooltip">
+                                Aprendi HTML5 durante meu curso de
+                                desenvolvimento web na Udemy. Tenho 3+ anos
+                                de experiência criando estruturas semânticas
+                                e acessíveis.
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-category="frontend" data-progress="85">
+                            <i class="fab fa-css3-alt skill-icon"></i>
+                            <div class="skill-name">CSS3</div>
+                            <div class="skill-level">Avançado</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="--progress-width: 85%"></div>
+                            </div>
+                            <div class="tooltip">
+                                Domino CSS3, Flexbox, Grid, animações e
+                                responsividade. Experiência adquirida
+                                através de projetos pessoais e freelances.
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-category="frontend" data-progress="65">
+                            <i class="fab fa-js-square skill-icon"></i>
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-level">Intermediário</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="--progress-width: 65%"></div>
+                            </div>
+                            <div class="tooltip">
+                                JavaScript ES6+, DOM manipulation, APIs
+                                REST. Conhecimento aprofundado através de
+                                bootcamp da Rocketseat.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="category">
+                    <h3 class="category-title">
+                        <i class="fas fa-server"></i>
+                        Backend Development
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-category="backend" data-progress="50">
+                            <i class="fab fa-node-js skill-icon"></i>
+                            <div class="skill-name">Node.js</div>
+                            <div class="skill-level">Intermediário</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="--progress-width: 50%"></div>
+                            </div>
+                            <div class="tooltip">
+                                Express.js, middleware, APIs RESTful.
+                                Aprendi através do bootcamp GoStack e
+                                aplicando em projetos reais.
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-category="backend" data-progress="25">
+                            <i class="fab fa-python skill-icon"></i>
+                            <div class="skill-name">Python</div>
+                            <div class="skill-level">Iniciante</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="--progress-width: 25%"></div>
+                            </div>
+                            <div class="tooltip">
+                                Django, Flask, automação de scripts.
+                                Conhecimento adquirido na faculdade e
+                                projetos de automação.
+                            </div>
+                        </div>
+                        <div class="skill-item" data-category="backend" data-progress="20">
+                            <i class="fab fa-java skill-icon"></i>
+                            <div class="skill-name">Java</div>
+                            <div class="skill-level">Básico</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="--progress-width: 20%"></div>
+                            </div>
+                            <div class="tooltip">
+                                Spring Boot, POO, estruturas de dados. Base
+                                sólida adquirida durante graduação em
+                                Ciência da Computação.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="category">
+                    <h3 class="category-title">
+                        <i class="fas fa-database"></i>
+                        Database & Cloud
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-category="database" data-progress="10">
+                            <i class="fas fa-database skill-icon"></i>
+                            <div class="skill-name">MySQL</div>
+                            <div class="skill-level">Iniciante</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="--progress-width: 10%"></div>
+                            </div>
+                            <div class="tooltip">
+                                Consultas complexas, stored procedures,
+                                otimização. 3+ anos de experiência em
+                                projetos acadêmicos e profissionais.
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-category="database" data-progress="5">
+                            <i class="fas fa-leaf skill-icon"></i>
+                            <div class="skill-name">MongoDB</div>
+                            <div class="skill-level">Iniciante</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="--progress-width: 5%"></div>
+                            </div>
+                            <div class="tooltip">
+                                NoSQL, aggregation, indexação. Uso em
+                                projetos Node.js e aplicações que precisam
+                                de flexibilidade.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Others -->
+                <div class="category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Ferramentas & Outros
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-category="tools" data-progress="50">
+                            <i class="fab fa-git-alt skill-icon"></i>
+                            <div class="skill-name">Git</div>
+                            <div class="skill-level">Intermediário</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="--progress-width: 50%"></div>
+                            </div>
+                            <div class="tooltip">
+                                Controle de versão, branches, merge, rebase.
+                                Uso diário em todos os projetos, tanto
+                                pessoais quanto profissionais.
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-category="tools" data-progress="50">
+                            <i class="fab fa-github skill-icon"></i>
+                            <div class="skill-name">GitHub</div>
+                            <div class="skill-level">Intermediário</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="--progress-width: 50%"></div>
+                            </div>
+                            <div class="tooltip">
+                                GitHub Actions, Pages, colaboração em
+                                projetos. Plataforma principal para hospedar
+                                e compartilhar meus códigos.
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-category="design" data-progress="40">
+                            <i class="fab fa-figma skill-icon"></i>
+                            <div class="skill-name">Figma</div>
+                            <div class="skill-level">Básico</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="--progress-width: 40%"></div>
+                            </div>
+                            <div class="tooltip">
+                                Prototipagem, design de interfaces,
+                                colaboração. Uso para criar mockups antes de
+                                desenvolver as aplicações.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title fade-in">Projetos</h2>
+            <p class="text-mobile">Spoiler: Clique neles!👀</p>
+            <div class="projects-grid fade-in">
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <!-- SUBSTITUIR: Adicione a imagem do seu projeto aqui -->
+                            <div class="project-image">
+                                <i class="fa-solid fa-list-check"></i>
+                            </div>
+                            <h3 class="project-title">Lista de Tarefas</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3 class="project-title">Lista de Tarefas</h3>
+                            <p class="project-description">
+                                Este é um aplicativo web de lista de tarefas
+                                que permite aos usuários adicionar,
+                                classificar, filtrar e remover tarefas. Ele
+                                utiliza um banco de dados (SQL) para
+                                armazenar as tarefas.
+                            </p>
+                            <a href="https://github.com/BlackoutFox/tarefa-app.git" target="_blank"
+                                class="project-link">Confira o código no GitHub clicando aqui</a>
+                            <!-- SUBSTITUIR: Adicione o link do seu repositório -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <!-- SUBSTITUIR: Adicione a imagem do seu projeto aqui -->
+                            <div class="project-image">
+                                <i class="fa-solid fa-user-secret"></i>
+                            </div>
+                            <h3 class="project-title">Caso CSI</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3 class="project-title">Caso CSI</h3>
+                            <p class="project-description">
+                                Implementação do algoritmo clássico de
+                                CMD,onde o usuário pode atuar na resolução
+                                de um caso fictício de CSI.
+                            </p>
+                            <a href="https://github.com/BlackoutFox/Caso-de-CSI.git" target="_blank"
+                                class="project-link">Confira o código no GitHub clicando aqui</a>
+                            <!-- SUBSTITUIR: Adicione o link do seu repositório -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <!-- SUBSTITUIR: Adicione a imagem do seu projeto aqui -->
+                            <div class="project-image">
+                                <i class="fa-solid fa-pager"></i>
+                            </div>
+                            <h3 class="project-title">Landing-Page</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3 class="project-title">Landing-Page</h3>
+                            <p class="project-description">
+                                Landing-Page feita durante o curso de
+                                desenvolvimento web na Udemy. O projeto
+                                utiliza HTML, CSS para criar uma página de
+                                destino responsiva. O tema consiste em
+                                motivação e apoio para pessoas que estão
+                                passando por dificuldades emocionais.
+                            </p>
+                            <a href="https://github.com/BlackoutFox/Landing-page.git" target="_blank"
+                                class="project-link">Confira o código no GitHub clicando aqui</a>
+                            <!-- SUBSTITUIR: Adicione o link do seu repositório -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/BlackoutFox?tab=repositories" target="_blank" class="project-link-other">
+                > Confira outros Projetos aqui.</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Entre em contato.</h2>
+            <form class="contact-form fade-in" id="contactForm">
+                <form action="https://formsubmit.co/petter.santos@outlook.com.br" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Enviar Mensagem
+                    </button>
+                </form>
+                <div class="form-message" id="formMessage"></div>
+            </form>
+            <!-- <form class="contact-form fade-in" id="contactForm">
+                <form id="form-contato">
+                    <div class="form-group">
+                        <input type="text" name="nome" placeholder="Seu nome *" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Seu e-mail *" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="telefone" placeholder="Seu celular" />
+                    </div>
+                    <div class="form-group">
+                        <textarea name="mensagem" placeholder="Sua mensagem *" required></textarea>
+                    </div>
+                    <input type="text" name="_honey" style="display: none" />
+                    <input type="hidden" name="_captcha" value="false" />
+                    <input type="hidden" name="_subject" value="Nova mensagem do formulário!" />
+
+                    <button type="submit" class="submit-btn">ENVIAR</button>
+
+                </form>
+                <div class="notificacao sucesso" id="sucesso">
+                    Mensagem enviada com sucesso!
+                </div>
+                <div class="notificacao erro" id="erro">
+                    Erro ao enviar mensagem.
+                </div>
+            </form> -->
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <!-- SUBSTITUIR: Adicione os links das suas redes sociais -->
+                <a href="https://www.linkedin.com/in/pettersantos/" target="_blank" class="social-link"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/BlackoutFox" target="_blank" class="social-link"><i
+                        class="fab fa-github"></i></a>
+            </div>
+            <p class="footer-text">
+                <a href="mailto:petter.santos@outlook.com.br" target="_blank"
+                    class="project-link">Petter.santos@outlook.com.br</a>
+            </p>
+            <p class="footer-text">
+                &copy; 2025 Petter Santos. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Particles.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+    <script>
+        // Particles.js Configuration
+        particlesJS("particles-js", {
+            particles: {
+                number: {
+                    value: 80,
+                    density: {
+                        enable: true,
+                        value_area: 800,
+                    },
+                },
+                color: {
+                    value: "#ffffff",
+                },
+                shape: {
+                    type: "circle",
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false,
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#ffffff",
+                    opacity: 0.4,
+                    width: 1,
+                },
+                move: {
+                    enable: true,
+                    speed: 6,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false,
+                },
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: "repulse",
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: "push",
+                    },
+                    resize: true,
+                },
+                modes: {
+                    grab: {
+                        distance: 400,
+                        line_linked: {
+                            opacity: 1,
+                        },
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 40,
+                        duration: 2,
+                        opacity: 8,
+                        speed: 3,
+                    },
+                    repulse: {
+                        distance: 200,
+                        duration: 0.4,
+                    },
+                    push: {
+                        particles_nb: 4,
+                    },
+                    remove: {
+                        particles_nb: 2,
+                    },
+                },
+            },
+            retina_detect: true,
+        });
+
+        // Navbar scroll effect
+        window.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+
+        // Mobile menu toggle
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", function () {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll(".nav-link").forEach((link) => {
+            link.addEventListener("click", function () {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+                const target = document.querySelector(
+                    this.getAttribute("href")
+                );
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px",
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        }, observerOptions);
+        const observerAnimate = new IntersectionObserver(function (
+            entries
+        ) {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("animate");
+
+                    // Trigger progress bar animation for visible skill items
+                    if (entry.target.classList.contains("skill-item")) {
+                        const progressBar = entry.target.querySelector(
+                            ".skill-progress-bar"
+                        );
+                        if (progressBar && !isMobile) {
+                            setTimeout(() => {
+                                progressBar.style.animation =
+                                    "progressFill 0.8s ease forwards";
+                            }, Math.random() * 500); // Random delay for staggered effect
+                        }
+                    }
+                }
+            });
+        },
+            observerOptions);
+
+        document.querySelectorAll(".fade-in").forEach((el) => {
+            observer.observe(el);
+        });
+
+        // Mobile project card flip functionality
+        if (window.innerWidth <= 768) {
+            document.querySelectorAll(".project-card").forEach((card) => {
+                card.addEventListener("click", function () {
+                    this.classList.toggle("flipped");
+                });
+            });
+        }
+
+        // Form submission handling
+        const contactForm = document.getElementById("contactForm");
+        const formMessage = document.getElementById("formMessage");
+
+        contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+            const name = formData.get("name");
+            const email = formData.get("email");
+            const message = formData.get("message");
+
+            // Basic form validation
+            if (!name || !email || !message) {
+                showMessage(
+                    "Por favor, preencha todos os campos.",
+                    "error"
+                );
+                return;
+            }
+
+            if (!isValidEmail(email)) {
+                showMessage("Por favor, insira um email válido.", "error");
+                return;
+            }
+
+            // Simulate form submission (replace with actual FormSubmit)
+            showMessage(
+                "Mensagem enviada com sucesso! Entrarei em contato em breve.",
+                "success"
+            );
+            this.reset();
+        });
+
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        function showMessage(text, type) {
+            formMessage.textContent = text;
+            formMessage.className = `form-message ${type}`;
+            formMessage.style.display = "block";
+
+            setTimeout(() => {
+                formMessage.style.display = "none";
+            }, 5000);
+        }
+
+        // Optimize performance by throttling scroll events
+        let ticking = false;
+        function updateScrollEffects() {
+            // Navbar scroll effect
+            const navbar = document.querySelector(".navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+            ticking = false;
+        }
+
+        window.addEventListener("scroll", function () {
+            if (!ticking) {
+                requestAnimationFrame(updateScrollEffects);
+                ticking = true;
+            }
+        });
+
+        // Preload critical images for better performance
+        function preloadImages() {
+            const imageUrls = [
+                // Add your image URLs here when you replace the placeholders
+                // 'path/to/your/hero-bg.jpg',
+                // 'path/to/your/profile-photo.jpg'
+            ];
+
+            imageUrls.forEach((url) => {
+                const img = new Image();
+                img.src = url;
+            });
+        }
+
+        // Initialize preloading when DOM is loaded
+        document.addEventListener("DOMContentLoaded", preloadImages);
+
+        // Add loading animation for better UX
+        window.addEventListener("load", function () {
+            document.body.classList.add("loaded");
+        });
+
+        // Keyboard navigation support
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+            }
+        });
+
+        // Enhanced accessibility
+        document
+            .querySelectorAll(
+                ".nav-link, .cta-button, .project-link, .social-link"
+            )
+            .forEach((link) => {
+                link.addEventListener("focus", function () {
+                    this.style.outline = "2px solid var(--accent-color)";
+                    this.style.outlineOffset = "2px";
+                });
+
+                link.addEventListener("blur", function () {
+                    this.style.outline = "none";
+                });
+            });
+
+        // Performance monitoring
+        if ("PerformanceObserver" in window) {
+            const observer = new PerformanceObserver((list) => {
+                const entries = list.getEntries();
+                entries.forEach((entry) => {
+                    if (entry.entryType === "largest-contentful-paint") {
+                        console.log("LCP:", entry.startTime);
+                    }
+                });
+            });
+            observer.observe({ entryTypes: ["largest-contentful-paint"] });
+        }
+        // Mobile Detection
+        const isMobile = window.innerWidth <= 768;
+        const tooltipOverlay = document.getElementById("tooltipOverlay");
+        let activeTooltip = null;
+
+        // Handle skill item interactions
+        document.querySelectorAll(".skill-item").forEach((skillItem) => {
+            if (isMobile) {
+                // Mobile: Click to toggle tooltip
+                skillItem.addEventListener("click", function (e) {
+                    e.stopPropagation();
+
+                    // Close any active tooltip
+                    if (activeTooltip && activeTooltip !== this) {
+                        activeTooltip.classList.remove("active");
+                    }
+
+                    // Toggle current tooltip
+                    this.classList.toggle("active");
+
+                    if (this.classList.contains("active")) {
+                        activeTooltip = this;
+                        tooltipOverlay.classList.add("active");
+                    } else {
+                        activeTooltip = null;
+                        tooltipOverlay.classList.remove("active");
+                    }
+                });
+            } else {
+                // Desktop: Hover behavior (already handled by CSS)
+                skillItem.addEventListener("mouseenter", function () {
+                    // Trigger progress bar animation
+                    const progressBar = this.querySelector(
+                        ".skill-progress-bar"
+                    );
+                    if (progressBar) {
+                        progressBar.style.animation = "none";
+                        setTimeout(() => {
+                            progressBar.style.animation =
+                                "progressFill 0.8s ease forwards";
+                        }, 10);
+                    }
+                });
+            }
+        });
+
+        // Close tooltip when clicking overlay (mobile)
+        if (isMobile) {
+            tooltipOverlay.addEventListener("click", function () {
+                if (activeTooltip) {
+                    activeTooltip.classList.remove("active");
+                    activeTooltip = null;
+                }
+                this.classList.remove("active");
+            });
+
+            // Close tooltip when clicking outside (mobile)
+            document.addEventListener("click", function (e) {
+                if (!e.target.closest(".skill-item")) {
+                    if (activeTooltip) {
+                        activeTooltip.classList.remove("active");
+                        activeTooltip = null;
+                        tooltipOverlay.classList.remove("active");
+                    }
+                }
+            });
+
+            // Handle escape key
+            document.addEventListener("keydown", function (e) {
+                if (e.key === "Escape" && activeTooltip) {
+                    activeTooltip.classList.remove("active");
+                    activeTooltip = null;
+                    tooltipOverlay.classList.remove("active");
+                }
+            });
+        }
+        // Observe all skill items and categories
+        document
+            .querySelectorAll(".skill-item, .category")
+            .forEach((item) => {
+                observer.observe(item);
+            });
+
+        // Enhanced progress bar animation on scroll
+        function animateProgressBars() {
+            const skillItems = document.querySelectorAll(".skill-item");
+
+            skillItems.forEach((item) => {
+                const rect = item.getBoundingClientRect();
+                const isVisible =
+                    rect.top < window.innerHeight && rect.bottom > 0;
+
+                if (isVisible) {
+                    const progressBar = item.querySelector(
+                        ".skill-progress-bar"
+                    );
+                    const progress = item.dataset.progress;
+
+                    if (
+                        progressBar &&
+                        !progressBar.hasAttribute("data-animated")
+                    ) {
+                        progressBar.style.setProperty(
+                            "--progress-width",
+                            progress + "%"
+                        );
+                        progressBar.setAttribute("data-animated", "true");
+
+                        // Add a slight delay for each item
+                        const delay =
+                            Array.from(skillItems).indexOf(item) * 100;
+                        setTimeout(() => {
+                            progressBar.style.animation =
+                                "progressFill 1.2s ease forwards";
+                        }, delay);
+                    }
+                }
+            });
+        }
+
+        // Throttled scroll handler
+        let scrollTimeout;
+        window.addEventListener("scroll", function () {
+            if (scrollTimeout) {
+                clearTimeout(scrollTimeout);
+            }
+            scrollTimeout = setTimeout(animateProgressBars, 50);
+        });
+
+        // Initial animation on load
+        window.addEventListener("load", function () {
+            setTimeout(animateProgressBars, 500);
+        });
+
+        // Smooth scroll behavior for better UX
+        document.addEventListener("DOMContentLoaded", function () {
+            // Add smooth scrolling to any internal links if they exist
+            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(
+                        this.getAttribute("href")
+                    );
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                        });
+                    }
+                });
+            });
+        });
+
+        // Add keyboard navigation for accessibility
+        document.querySelectorAll(".skill-item").forEach((item, index) => {
+            item.setAttribute("tabindex", "0");
+            item.setAttribute("role", "button");
+            item.setAttribute(
+                "aria-label",
+                `Skill: ${item.querySelector(".skill-name").textContent}`
+            );
+
+            item.addEventListener("keydown", function (e) {
+                if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    if (isMobile) {
+                        this.click();
+                    }
+                }
+
+                // Arrow key navigation
+                const skills = Array.from(
+                    document.querySelectorAll(".skill-item")
+                );
+                const currentIndex = skills.indexOf(this);
+
+                let nextIndex;
+                switch (e.key) {
+                    case "ArrowRight":
+                    case "ArrowDown":
+                        e.preventDefault();
+                        nextIndex = (currentIndex + 1) % skills.length;
+                        skills[nextIndex].focus();
+                        break;
+                    case "ArrowLeft":
+                    case "ArrowUp":
+                        e.preventDefault();
+                        nextIndex =
+                            currentIndex === 0
+                                ? skills.length - 1
+                                : currentIndex - 1;
+                        skills[nextIndex].focus();
+                        break;
+                }
+            });
+        });
+
+        // Performance optimization: Disable animations on reduced motion preference
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            document
+                .querySelectorAll(
+                    ".skill-item, .category, .skill-progress-bar"
+                )
+                .forEach((element) => {
+                    element.style.animation = "none";
+                    element.style.transition = "none";
+                });
+        }
+
+        // Handle window resize for mobile detection update
+        let resizeTimeout;
+        window.addEventListener("resize", function () {
+            if (resizeTimeout) {
+                clearTimeout(resizeTimeout);
+            }
+            resizeTimeout = setTimeout(() => {
+                location.reload(); // Simple solution to handle mobile/desktop switch
+            }, 250);
+        });
+    </script>
+</body>
+
+</html>
