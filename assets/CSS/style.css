@@ -23,7 +23,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -92,7 +92,7 @@ body {
 }
 
 .nav-link::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 0;
     height: 2px;
@@ -129,9 +129,6 @@ body {
     text-align: center;
     color: var(--text-color);
     position: relative;
-    background-blend-mode: overlay;
-    /* background: url('SUA_IMAGEM_DE_FUNDO_AQUI.jpg') center/cover no-repeat; */
-    /* background-color: rgba(102, 126, 234, 0.8); */
 }
 
 .hero-content {
@@ -195,7 +192,7 @@ body {
 }
 
 .section-title::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 80px;
     height: 4px;
@@ -206,7 +203,7 @@ body {
     border-radius: 2px;
 }
 
-.container .text-mobile {
+.text-mobile {
     display: none;
     visibility: hidden;
 }
@@ -236,9 +233,8 @@ body {
     transition: transform 0.3s ease;
 }
 
-/* SUBSTITUIR: Adicione aqui o link da sua foto pessoal */
 .about-image::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 20px;
     left: 20px;
@@ -277,34 +273,7 @@ body {
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
-
-.skills-section,
-.skills-section .skill-name,
-.skills-section .section-title {
-    color: #2d3748;
-    /* Cor escura para o texto */
-}
-
-.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 3rem;
     color: var(--text-color);
-    position: relative;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    width: 80px;
-    height: 4px;
-    background: var(--gradient);
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 2px;
 }
 
 /* Skills Categories */
@@ -357,7 +326,7 @@ body {
 }
 
 .skill-item::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: -100%;
@@ -405,84 +374,6 @@ body {
     font-weight: 400;
 }
 
-/* Tooltip */
-.tooltip {
-    position: absolute;
-    bottom: 110%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #2d3748;
-    color: #ffffff;
-    padding: 1rem;
-    border-radius: 10px;
-    font-size: 0.85rem;
-    line-height: 1.4;
-    white-space: nowrap;
-    max-width: 250px;
-    white-space: normal;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    z-index: 1000;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-}
-
-.tooltip::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 8px solid transparent;
-    border-top-color: rgba(26, 32, 44, 0.95);
-}
-
-.skill-item:hover .tooltip {
-    opacity: 1;
-    visibility: visible;
-    bottom: 120%;
-}
-
-/* Mobile Tooltip (Click to show) */
-.skill-item.active .tooltip {
-    opacity: 1;
-    visibility: visible;
-    bottom: 120%;
-}
-
-/* Skill Colors */
-.skill-item[data-category="frontend"] .skill-icon {
-    color: #61dafb;
-    /* React Blue */
-}
-
-.skill-item[data-category="backend"] .skill-icon {
-    color: #68d391;
-    /* Green */
-}
-
-.skill-item[data-category="mobile"] .skill-icon {
-    color: #9f7aea;
-    /* Purple */
-}
-
-.skill-item[data-category="database"] .skill-icon {
-    color: #f6ad55;
-    /* Orange */
-}
-
-.skill-item[data-category="tools"] .skill-icon {
-    color: #fc8181;
-    /* Red */
-}
-
-.skill-item[data-category="design"] .skill-icon {
-    color: #f093fb;
-    /* Pink */
-}
-
 /* Progress Bar */
 .skill-progress {
     width: 100%;
@@ -501,8 +392,9 @@ body {
     width: 0;
 }
 
-.skill-item:hover .skill-progress-bar {
-    animation: progressFill 0.8s ease forwards;
+/* Animação da barra de progresso */
+.skill-progress-bar.animate-progress {
+    animation: progressFill 1.2s ease forwards;
 }
 
 @keyframes progressFill {
@@ -511,57 +403,69 @@ body {
     }
 }
 
-/* Animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Tooltip - CORRIGIDO */
+.tooltip {
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(45, 55, 72, 0.95);
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    white-space: normal;
+    max-width: 250px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
 }
 
-.skills-section {
-    animation: fadeInUp 0.8s ease;
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 8px solid transparent;
+    border-top-color: rgba(45, 55, 72, 0.95);
 }
 
-.skill-item {
-    animation: fadeInUp 0.6s ease backwards;
+/* Tooltip aparece no hover - DESKTOP */
+.skill-item:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
 }
 
-.skill-item:nth-child(1) {
-    animation-delay: 0.1s;
+/* Skill Colors */
+.skill-item[data-category="frontend"] .skill-icon {
+    color: #61dafb;
 }
 
-.skill-item:nth-child(2) {
-    animation-delay: 0.2s;
+.skill-item[data-category="backend"] .skill-icon {
+    color: #68d391;
 }
 
-.skill-item:nth-child(3) {
-    animation-delay: 0.3s;
+.skill-item[data-category="mobile"] .skill-icon {
+    color: #9f7aea;
 }
 
-.skill-item:nth-child(4) {
-    animation-delay: 0.4s;
+.skill-item[data-category="database"] .skill-icon {
+    color: #f6ad55;
 }
 
-.skill-item:nth-child(5) {
-    animation-delay: 0.5s;
+.skill-item[data-category="tools"] .skill-icon {
+    color: #fc8181;
 }
 
-.skill-item:nth-child(6) {
-    animation-delay: 0.6s;
-}
-
-.skill-item:nth-child(7) {
-    animation-delay: 0.7s;
-}
-
-.skill-item:nth-child(8) {
-    animation-delay: 0.8s;
+.skill-item[data-category="design"] .skill-icon {
+    color: #f093fb;
 }
 
 /* Projects Section */
@@ -606,7 +510,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .card-front {
@@ -627,7 +531,6 @@ body {
     height: 80px;
     border-radius: 10px;
     margin-bottom: 1rem;
-    /* SUBSTITUIR: Adicione aqui as imagens dos seus projetos */
     background: rgba(255, 255, 255, 0.2);
     display: flex;
     align-items: center;
@@ -648,25 +551,16 @@ body {
     opacity: 0.9;
 }
 
-.project-link {
+.project-link,
+.project-link-other {
     color: var(--accent-color);
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
 }
 
-.project-link:hover {
-    color: var(--text-color);
-}
-
-.container .project-link-other {
-    color: var(--accent-color);
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.container .project-link-other:hover {
+.project-link:hover,
+.project-link-other:hover {
     color: var(--text-color);
 }
 
@@ -823,6 +717,46 @@ body {
     transform: translateY(0);
 }
 
+.skills-section {
+    animation: fadeInUp 0.8s ease;
+}
+
+.skill-item {
+    animation: fadeInUp 0.6s ease backwards;
+}
+
+.skill-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.skill-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.skill-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.skill-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.skill-item:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.skill-item:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.skill-item:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.skill-item:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .nav-menu {
@@ -902,32 +836,50 @@ body {
         font-size: 0.7rem;
     }
 
-    .tooltip {
-        font-size: 0.8rem;
-        max-width: 200px;
-        padding: 0.8rem;
+    /* Tooltip Mobile - CORRIGIDO */
+    .skill-item:hover .tooltip {
+        opacity: 0;
+        visibility: hidden;
     }
 
-    /* Mobile tooltip positioning */
-    .tooltip {
+    .skill-item.active .tooltip {
         position: fixed;
-        bottom: auto;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 2000;
+        max-width: 280px;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
     }
 
-    .skill-item:hover .tooltip,
-    .skill-item.active .tooltip {
-        bottom: auto;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .tooltip::after {
+    .skill-item.active .tooltip::after {
         display: none;
+    }
+
+    .tooltip-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1999;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .tooltip-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .text-mobile {
+        color: var(--accent-color);
+        display: flex;
+        visibility: visible;
     }
 
     .projects-grid {
@@ -940,19 +892,6 @@ body {
 
     .project-card .card-inner {
         transform: none;
-    }
-
-    .container .text-mobile {
-        color: var(--accent-color);
-        display: flex;
-        visibility: visible;
-    }
-
-    .container .project-link-other {
-        color: var(--accent-color);
-        text-decoration: none;
-        font-weight: 600;
-        transition: all 0.3s ease;
     }
 
     .project-card.flipped .card-inner {
@@ -995,32 +934,4 @@ body {
     .category-title {
         font-size: 1.2rem;
     }
-
-    .container .text-mobile {
-        color: var(--accent-color);
-        display: flex;
-        visibility: visible;
-    }
-}
-
-
-
-/* Overlay for mobile tooltips */
-.tooltip-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1999;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-}
-
-.tooltip-overlay.active {
-    opacity: 1;
-    visibility: visible;
-
 }
