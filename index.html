@@ -83,7 +83,6 @@
                 <h2 class="section-title fade-in">Sobre mim</h2>
                 <div class="about-content fade-in">
                     <div class="about-image">
-                        <!-- SUBSTITUIR: Adicione o link da sua foto pessoal aqui -->
                         <img
                             src="assets/images/man_photo_profile.jpg"
                             alt="Foto de Petter Santos"
@@ -324,9 +323,6 @@
                                         style="--progress-width: 40%"
                                     ></div>
                                 </div>
-                                <!-- <div class="tooltip">
-                                    Uso para design de interfaces/protótipos.
-                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -343,7 +339,6 @@
                     <div class="project-card">
                         <div class="card-inner">
                             <div class="card-front">
-                                <!-- SUBSTITUIR: Adicione a imagem do seu projeto aqui -->
                                 <div class="project-image">
                                     <i class="fa-solid fa-list-check"></i>
                                 </div>
@@ -359,12 +354,11 @@
                                     armazenamento
                                 </p>
                                 <a
-                                    href="https://github.com/BlackoutFox/tarefa-app.git"
+                                    href="https://github.com/PetterSsantos/tarefa-app"
                                     target="_blank"
                                     class="project-link"
                                     >Confira o código clicando aqui</a
                                 >
-                                <!-- SUBSTITUIR: Adicione o link do seu repositório -->
                             </div>
                         </div>
                     </div>
@@ -372,7 +366,6 @@
                     <div class="project-card">
                         <div class="card-inner">
                             <div class="card-front">
-                                <!-- SUBSTITUIR: Adicione a imagem do seu projeto aqui -->
                                 <div class="project-image">
                                     <i class="fa-solid fa-user-secret"></i>
                                 </div>
@@ -386,12 +379,11 @@
                                     de um caso fictício de CSI.
                                 </p>
                                 <a
-                                    href="https://github.com/BlackoutFox/Caso-de-CSI.git"
+                                    href="https://github.com/PetterSsantos/Caso-de-CSI"
                                     target="_blank"
                                     class="project-link"
                                     >Confira o código clicando aqui</a
                                 >
-                                <!-- SUBSTITUIR: Adicione o link do seu repositório -->
                             </div>
                         </div>
                     </div>
@@ -399,7 +391,6 @@
                     <div class="project-card">
                         <div class="card-inner">
                             <div class="card-front">
-                                <!-- SUBSTITUIR: Adicione a imagem do seu projeto aqui -->
                                 <div class="project-image">
                                     <i class="fa-solid fa-pager"></i>
                                 </div>
@@ -415,18 +406,17 @@
                                     emocionais.
                                 </p>
                                 <a
-                                    href="https://github.com/BlackoutFox/Landing-page.git"
+                                    href="https://github.com/PetterSsantos/Landing-page"
                                     target="_blank"
                                     class="project-link"
                                     >Confira o código clicando aqui</a
                                 >
-                                <!-- SUBSTITUIR: Adicione o link do seu repositório -->
                             </div>
                         </div>
                     </div>
                 </div>
                 <a
-                    href="https://github.com/BlackoutFox?tab=repositories"
+                    href="https://github.com/PetterSsantos?tab=repositories"
                     target="_blank"
                     class="project-link-other"
                 >
@@ -473,7 +463,6 @@
         <footer class="footer">
             <div class="container">
                 <div class="social-links">
-                    <!-- SUBSTITUIR: Adicione os links das suas redes sociais -->
                     <a
                         href="https://www.linkedin.com/in/pettersantos/"
                         target="_blank"
@@ -481,7 +470,7 @@
                         ><i class="fab fa-linkedin-in"></i
                     ></a>
                     <a
-                        href="https://github.com/BlackoutFox"
+                        href="https://github.com/PetterSsantos"
                         target="_blank"
                         class="social-link"
                         ><i class="fab fa-github"></i
@@ -666,9 +655,8 @@
             // Função para precarregar imagens
             function preloadImages() {
                 const imageUrls = [
-                    // URLs imagens
-                    // 'path/to/your/hero-bg.jpg',
-                    // 'path/to/your/profile-photo.jpg'
+                    'assets/images/man_photo_profile.jpg',
+                    'assets/images/user-regular.svg'
                 ];
 
                 imageUrls.forEach((url) => {
@@ -728,66 +716,6 @@
                         });
                     });
             }
-
-            // Função para configurar tooltips mobile
-            // function setupMobileTooltips() {
-            //     const tooltipOverlay = document.getElementById("tooltipOverlay");
-
-            //     if (!tooltipOverlay) return;
-
-            //     document.querySelectorAll(".skill-item").forEach((skillItem) => {
-            //         if (isMobile()) {
-            //             skillItem.addEventListener("click", function (e) {
-            //                 e.stopPropagation();
-
-            //                 if (activeTooltip && activeTooltip !== this) {
-            //                     activeTooltip.classList.remove("active");
-            //                 }
-
-            //                 this.classList.toggle("active");
-
-            //                 if (this.classList.contains("active")) {
-            //                     activeTooltip = this;
-            //                     tooltipOverlay.classList.add("active");
-            //                 } else {
-            //                     activeTooltip = null;
-            //                     tooltipOverlay.classList.remove("active");
-            //                 }
-            //             });
-            //         } else {
-            //             skillItem.addEventListener("mouseenter", function () {
-            //                 const progressBar = this.querySelector(".skill-progress-bar");
-            //                 if (progressBar) {
-            //                     progressBar.style.animation = "none";
-            //                     setTimeout(() => {
-            //                         progressBar.style.animation = "progressFill 0.8s ease forwards";
-            //                     }, 10);
-            //                 }
-            //             });
-            //         }
-            //     });
-
-            //     if (isMobile()) {
-            //         tooltipOverlay.addEventListener("click", function () {
-            //             if (activeTooltip) {
-            //                 activeTooltip.classList.remove("active");
-            //                 activeTooltip = null;
-            //             }
-            //             this.classList.remove("active");
-            //         });
-
-            //         document.addEventListener("click", function (e) {
-            //             if (!e.target.closest(".skill-item")) {
-            //                 if (activeTooltip) {
-            //                     activeTooltip.classList.remove("active");
-            //                     activeTooltip = null;
-            //                     tooltipOverlay.classList.remove("active");
-            //                 }
-            //             }
-            //         });
-            //     }
-            // }
-
             // Função para configurar formulário de contato
             function setupContactForm() {
                 const contactForm = document.getElementById("contactForm");
